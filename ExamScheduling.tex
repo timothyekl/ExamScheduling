@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{mdwlist}
+\usepackage{wasysym}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+
+\pagestyle{fancy}
+\headheight 35pt
+\begin{document}
+
+\lhead{\textbf{MA444 \\ Project 1 \\ Exam Scheduling}}
+\rhead{Tim Ekl \\ Christopher Gropp \\ Michael Hein}
+
+\section{Introduction}
+
+Exams are an unavoidable part of any institution of higher education, and with the wide variety of classes and unique mixture of students each quarter, finding a good schedule for finals can be a challenge. Each student has their own concept of what makes a ``good'' schedule, and while there tends to be consensus on most issues, it is generally impossible to satisfy all students.
+
+\section{Problem}
+
+Rose-Hulman provides 11 timeslots each quarter in which finals can take place; in each of these slots, up to 34 distinct classes can be accommodated. Given a list of classes, professors who teach them, and students that attend each class, we seek an optimal schedule that assigns each class (and all its students) to one of the available timeslots, without overusing any single slot or double-booking a professor or student.
+
+\section{Assumptions}
+
+To generate a schedule, we make several assumptions about the problem. First and foremost, there are certain constraints imposed by Rose-Hulman beyond the physical constraints of time and place; namely, administration requires that no student take three consecutive finals, including ``wraparound'' finals in which a student has a 6pm final one day and an 8am the next. In addition, we assume that no student can be assigned two finals in the same timeslot, despite the possibility of rescheduling one such final with the registrar or professors.
+
+We then make a number of assumptions about what defines an optimal schedule. It is generally accepted that college students do not like to wake up early, and so we seek to avoid scheduling finals in the 8am timeslot whenever possible. In addition, many students make plans for breaks that begin soon after the quarter ends, and so we ``front-load'' the finals schedule and attempt to place many finals earlier in the week, though this effort takes lower priority than the time of day.
+
+\section{Model}
+
+
+
+\section{Discussion}
+
+
+
+\section{Conclusion}
+
+
+
+\end{document}
