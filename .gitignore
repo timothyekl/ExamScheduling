@@ -20,3 +20,6 @@ ExamScheduling.pdf
 *.nav
 *.snm
 *.vrb
+
+# Code
+bin/
